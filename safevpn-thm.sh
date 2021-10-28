@@ -2,11 +2,6 @@
 
 # Author: Nisrin Ahmed aka Wh1teDrvg0n
 
-if [ ! $1 ]; then
-  echo -e "\n[!] Usage: $0 ipMachine\n"
-  exit 1
-else:
-
   # IPv4 flush
   iptables -P INPUT ACCEPT
   iptables -P FORWARD ACCEPT
@@ -45,4 +40,3 @@ else:
   iptables -A INPUT -i tun0 -j DROP
   iptables -A OUTPUT -o tun0 -j DROP
   
-fi
