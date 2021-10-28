@@ -1,4 +1,4 @@
-# safeVPN-THM
+# TryHackMe safe VPN access
 iptables rules to only have incoming connections from the machine on TryHackMe
 
 usage:
